@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SS CREATIONS | Premium Poster Designer</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+    body {
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+        background: #0b0b0b;
+        color: #fff;
+        scroll-behavior: smooth;
+    }
+
+    /* HEADER */
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 40px;
+        background: #000;
+        border-bottom: 1px solid #222;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 999;
+    }
+
+    header img {
+        height: 70px;
+        filter: drop-shadow(0px 0px 6px #b8860b);
+    }
+
+    nav a {
+        margin: 0 15px;
+        color: #d4af37;
+        text-decoration: none;
+        font-size: 18px;
+        transition: 0.3s;
+    }
+
+    nav a:hover {
+        color: white;
+    }
+
+    /* HOME SECTION */
+    #home {
+        height: 100vh;
+        background: url('https://images.pexels.com/photos/3184306/pexels-photo-3184306.jpeg') center/cover no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-top: 100px;
+    }
+
+    #home h1 {
+        font-size: 55px;
+        color: #d4af37;
+        font-family: 'Playfair Display', serif;
+        animation: fadeIn 2s ease-in-out;
+        text-shadow: 0 0 15px black;
+    }
+
+    /* ABOUT */
+    #about {
+        padding: 80px 50px;
+        text-align: center;
+        background: #111;
+    }
+
+    #about h2 {
+        color: #d4af37;
+        font-size: 35px;
+        margin-bottom: 20px;
+    }
+
+    #about p {
+        font-size: 20px;
+        width: 70%;
+        margin: auto;
+        line-height: 1.7;
+    }
+
+    /* PORTFOLIO */
+    #portfolio {
+        padding: 80px 40px;
+        background: #0d0d0d;
+    }
+
+    #portfolio h2 {
+        color: #d4af37;
+        text-align: center;
+        font-size: 35px;
+        margin-bottom: 20px;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 25px;
+        margin-top: 40px;
+    }
+
+    .grid img {
+        width: 100%;
+        border-radius: 10px;
+        height: 340px;
+        object-fit: cover;
+        transition: 0.4s;
+        box-shadow: 0 0 10px rgba(212,175,55,0.2);
+    }
+
+    .grid img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 20px rgba(212,175,55,0.6);
+    }
+
+    /* SERVICES */
+    #services {
+        padding: 80px 40px;
+        background: #111;
+        text-align: center;
+    }
+
+    #services h2 {
+        color: #d4af37;
+        font-size: 35px;
+    }
+
+    .service-box {
+        margin: auto;
+        margin-top: 30px;
+        padding: 25px;
+        border: 1px solid #d4af37;
+        border-radius: 10px;
+        width: 60%;
+        font-size: 20px;
+        line-height: 1.8;
+    }
+
+    /* CONTACT */
+    #contact {
+        padding: 80px 40px;
+        background: #0b0b0b;
+        text-align: center;
+    }
+
+    #contact h2 {
+        font-size: 35px;
+        color: #d4af37;
+    }
+
+    #contact a {
+        font-size: 22px;
+        color: #fff;
+        display: block;
+        margin: 10px;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+
+    #contact a:hover {
+        color: #d4af37;
+    }
+
+    /* ANIMATION */
+    @keyframes fadeIn {
+        0% {opacity: 0;}
+        100% {opacity: 1;}
+    }
+</style>
+</head>
+
+<body>
+
+<!-- HEADER WITH LOGO -->
+<header>
+    <img src="C:\Users\shahf\Downloads\LOGO.PNG">
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- HOME -->
+<section id="home">
+    <h1>Premium Poster Designer – SS CREATIONS</h1>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        I am <b>J Shahfas Fahim</b>, founder of <b>SS CREATIONS</b>, a premium poster design brand specializing in 
+        modern, luxurious, and eye-catching visual designs.  
+        I won <b>1st Prize</b> in my college poster design competition and have experience designing 
+        professional posters for businesses, events, restaurants, builders, and social media branding.
+    </p>
+</section>
+
+<!-- PORTFOLIO -->
+<section id="portfolio">
+    <h2>My Work</h2>
+    <div class="grid">
+        <!-- Replace these images with your posters -->
+        <img src="https://images.pexels.com/photos/3184306/pexels-photo-3184306.jpeg">
+        <img src="https://images.pexels.com/photos/3184454/pexels-photo-3184454.jpeg">
+        <img src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg">
+        <img src="https://images.pexels.com/photos/3184406/pexels-photo-3184406.jpeg">
+    </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+    <h2>Services</h2>
+    <div class="service-box">
+        ✔ Business Posters<br>
+        ✔ Instagram Promotions<br>
+        ✔ Builder & Real Estate Ads<br>
+        ✔ Event & Fest Posters<br>
+        ✔ Restaurant & Menu Posters<br>
+        ✔ Offer, Sale & Festival Designs<br>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <h2>Contact Me</h2>
+    <a href="https://wa.me/919344348134">📱 WhatsApp: 93443 48134</a>
+    <a href="https://instagram.com/ss_creations">📸 Instagram: @ss_creations</a>
+</section>
+
+</body>
+</html>
